@@ -69,9 +69,11 @@ for param in "$@"; do
 done
 ```
 Было:
+
 ![1](https://github.com/Nikich828/git03_devops/blob/main/4.jpeg)
 
 Стало:
+
 ![1](https://github.com/Nikich828/git03_devops/blob/main/5.jpeg)
 
 
@@ -96,9 +98,11 @@ done
 Теперь скрипт будет отображать каждый переданный ему параметр отдельно. 
 
 Было:
+
 ![1](https://github.com/Nikich828/git03_devops/blob/main/7.jpeg)
 
 Стало:
+
 ![1](https://github.com/Nikich828/git03_devops/blob/main/8.jpeg)
 
 
@@ -131,9 +135,11 @@ echo "====="
 В этом случае скрипт тоже будет отображать каждый параметр в новой строке. 
 
 Было:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/11.jpeg)
 
 Стало:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/12.jpeg)
 
 **Шаг 3.** Отправляем изменённую ветку `main` в репозиторий.
@@ -165,9 +171,11 @@ done
 echo "====="
 ```
 Было:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/15.jpeg)
 
 Стало:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/16.jpeg)
 
 **Шаг 4.** Отправим эти изменения в ветку `git-rebase` с комментарием `git-rebase 1`.
@@ -177,9 +185,11 @@ echo "====="
 **Шаг 5.** И сделаем ещё один коммит `git-rebase 2` с пушем, заменив `echo "Parameter: $param"` на `echo "Next parameter: $param"`.
 
 Было:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/18.jpeg)
 
 Стало:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/19.jpeg)
 
 [1](https://github.com/Nikich828/git03_devops/blob/main/20.jpeg)
@@ -196,6 +206,7 @@ echo "====="
 ![Созданы обе ветки](img/01.png)
 
 У меня выглядит так:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/21.jpeg)
 
 [1](https://github.com/Nikich828/git03_devops/blob/main/22.jpeg)
@@ -223,6 +234,7 @@ Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 ![Первый мерж](img/02.png)
 
 У меня схема в  network почему то не изменился, подобный баг у меня был в предыдущем задании, из конфига на предлыдущем скрине видно что все сделано правильно, все коммиты замержены и они идентичны.
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/24.jpeg)
 
 #### Rebase
@@ -233,9 +245,11 @@ Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 указав слева от нижнего `fixup`. 
 
 Было:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/25.jpeg)
 
 Стало:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/26.jpeg)
 
 
@@ -290,9 +304,11 @@ echo "\$@ Parameter #$count = $param"
 **Шаг 5.** Опять получим конфликт в файле `rebase.sh` при попытке применения нашего второго коммита. Давайте разрешим конфликт, оставив строчку `echo "Next parameter: $param"`.
 
 Было:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/31.jpeg)
 
 Стало:
+
 [1](https://github.com/Nikich828/git03_devops/blob/main/32.jpeg)
 
 **Шаг 6.** Далее опять сообщаем Git о том, что конфликт разрешён — `git add rebase.sh` — и продолжим rebase — `git rebase --continue`.
