@@ -1,4 +1,4 @@
-# Домашнее задание к занятию «Ветвления в Git»
+# Домашнее задание к занятию «Ветвления в Git» "Лычагин Н.В."
 
 ### Цель задания
 
@@ -68,9 +68,10 @@ for param in "$@"; do
     count=$(( $count + 1 ))
 done
 ```
-Было
+Было:
 ![1](https://github.com/Nikich828/git03_devops/blob/main/4.jpeg)
-Стало
+
+Стало:
 ![1](https://github.com/Nikich828/git03_devops/blob/main/5.jpeg)
 
 
@@ -94,9 +95,10 @@ done
 
 Теперь скрипт будет отображать каждый переданный ему параметр отдельно. 
 
-Было
+Было:
 ![1](https://github.com/Nikich828/git03_devops/blob/main/7.jpeg)
-Стало
+
+Стало:
 ![1](https://github.com/Nikich828/git03_devops/blob/main/8.jpeg)
 
 
@@ -128,9 +130,10 @@ echo "====="
 
 В этом случае скрипт тоже будет отображать каждый параметр в новой строке. 
 
-Было
+Было:
 [1](https://github.com/Nikich828/git03_devops/blob/main/11.jpeg)
-Стало
+
+Стало:
 [1](https://github.com/Nikich828/git03_devops/blob/main/12.jpeg)
 
 **Шаг 3.** Отправляем изменённую ветку `main` в репозиторий.
@@ -161,9 +164,10 @@ done
 
 echo "====="
 ```
-Было
+Было:
 [1](https://github.com/Nikich828/git03_devops/blob/main/15.jpeg)
-Стало
+
+Стало:
 [1](https://github.com/Nikich828/git03_devops/blob/main/16.jpeg)
 
 **Шаг 4.** Отправим эти изменения в ветку `git-rebase` с комментарием `git-rebase 1`.
@@ -172,9 +176,10 @@ echo "====="
 
 **Шаг 5.** И сделаем ещё один коммит `git-rebase 2` с пушем, заменив `echo "Parameter: $param"` на `echo "Next parameter: $param"`.
 
-Было
+Было:
 [1](https://github.com/Nikich828/git03_devops/blob/main/18.jpeg)
-Стало
+
+Стало:
 [1](https://github.com/Nikich828/git03_devops/blob/main/19.jpeg)
 
 [1](https://github.com/Nikich828/git03_devops/blob/main/20.jpeg)
@@ -229,6 +234,7 @@ Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 
 Было:
 [1](https://github.com/Nikich828/git03_devops/blob/main/25.jpeg)
+
 Стало:
 [1](https://github.com/Nikich828/git03_devops/blob/main/26.jpeg)
 
@@ -285,6 +291,7 @@ echo "\$@ Parameter #$count = $param"
 
 Было:
 [1](https://github.com/Nikich828/git03_devops/blob/main/31.jpeg)
+
 Стало:
 [1](https://github.com/Nikich828/git03_devops/blob/main/32.jpeg)
 
