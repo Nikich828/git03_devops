@@ -108,13 +108,13 @@ done
 
 **Шаг 5.** Создайте коммит `merge: use shift` и отправьте изменения в репозиторий. 
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/9.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/9.jpeg)
 
 #### Изменим main  
 
 **Шаг 1.** Вернитесь в ветку `main`. 
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/10.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/10.jpeg)
 
 **Шаг 2.** Предположим, что пока мы работали над веткой `git-merge`, кто-то изменил `main`. Для этого
 изменим содержимое файла `rebase.sh` на:
@@ -136,15 +136,15 @@ echo "====="
 
 Было:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/11.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/11.jpeg)
 
 Стало:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/12.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/12.jpeg)
 
 **Шаг 3.** Отправляем изменённую ветку `main` в репозиторий.
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/13.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/13.jpeg)
 
 #### Подготовка файла rebase.sh  
 
@@ -154,7 +154,7 @@ echo "====="
 `git checkout 8baf217e80ef17ff577883fda90f6487f67bbcea` (хеш будет другой).
 **Шаг 2.** Создадим ветку `git-rebase`, основываясь на текущем коммите. 
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/14.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/14.jpeg)
 
 **Шаг 3.** И изменим содержимое файла `rebase.sh` на следующее, тоже починив скрипт, но немного в другом стиле:
 
@@ -172,27 +172,27 @@ echo "====="
 ```
 Было:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/15.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/15.jpeg)
 
 Стало:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/16.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/16.jpeg)
 
 **Шаг 4.** Отправим эти изменения в ветку `git-rebase` с комментарием `git-rebase 1`.
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/17.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/17.jpeg)
 
 **Шаг 5.** И сделаем ещё один коммит `git-rebase 2` с пушем, заменив `echo "Parameter: $param"` на `echo "Next parameter: $param"`.
 
 Было:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/18.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/18.jpeg)
 
 Стало:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/19.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/19.jpeg)
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/20.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/20.jpeg)
 
 #### Промежуточный итог  
 
@@ -207,9 +207,9 @@ echo "====="
 
 У меня выглядит так:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/21.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/21.jpeg)
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/22.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/22.jpeg)
 
 #### Merge
 
@@ -227,7 +227,7 @@ Counting objects: 100% (1/1), done.
 Writing objects: 100% (1/1), 223 bytes | 223.00 KiB/s, done.
 Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 ```  
-[1](https://github.com/Nikich828/git03_devops/blob/main/23.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/23.jpeg)
 
 В результате получаем такую схему:
   
@@ -235,7 +235,7 @@ Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 
 У меня схема в  network почему то не изменился, подобный баг у меня был в предыдущем задании, из конфига на предлыдущем скрине видно что все сделано правильно, все коммиты замержены и они идентичны.
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/24.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/24.jpeg)
 
 #### Rebase
 
@@ -246,11 +246,11 @@ Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 
 Было:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/25.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/25.jpeg)
 
 Стало:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/26.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/26.jpeg)
 
 
 В результате получаем:
@@ -267,7 +267,7 @@ To abort and get back to the state before "git rebase", run "git rebase --abort"
 Could not apply dc4688f... git 2.3 rebase @ instead *
 ``` 
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/27.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/27.jpeg)
 
 Если посмотреть содержимое файла `rebase.sh`, то увидим метки, оставленные Git для решения конфликта:
 
@@ -286,7 +286,7 @@ for param in "$@"; do
 done
 ```
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/28.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/28.jpeg)
 
 
 **Шаг 3.** Удалим метки, отдав предпочтение варианту:
@@ -295,21 +295,21 @@ done
 echo "\$@ Parameter #$count = $param"
 ```
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/29.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/29.jpeg)
 
 **Шаг 4.** Сообщим Git, что конфликт решён `git add rebase.sh` и продолжим rebase `git rebase --continue`.
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/30.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/30.jpeg)
 
 **Шаг 5.** Опять получим конфликт в файле `rebase.sh` при попытке применения нашего второго коммита. Давайте разрешим конфликт, оставив строчку `echo "Next parameter: $param"`.
 
 Было:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/31.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/31.jpeg)
 
 Стало:
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/32.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/32.jpeg)
 
 **Шаг 6.** Далее опять сообщаем Git о том, что конфликт разрешён — `git add rebase.sh` — и продолжим rebase — `git rebase --continue`.
 
@@ -334,7 +334,7 @@ Merge branch 'git-merge'
 Successfully rebased and updated refs/heads/git-rebase
 ```
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/33.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/33.jpeg)
 
 **Шаг 7.** И попробуем выполнить `git push` либо `git push -u origin git-rebase`, чтобы точно указать, что и куда мы хотим запушить. 
 
@@ -369,7 +369,7 @@ To github.com:andrey-borue/devops-netology.git
 Branch 'git-rebase' set up to track remote branch 'git-rebase' from 'origin'.
 ```
 
-[1](https://github.com/Nikich828/git03_devops/blob/main/34.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/34.jpeg)
 
 **Шаг 9**. Теперь можно смержить ветку `git-rebase` в main без конфликтов и без дополнительного мерж-комита простой перемоткой: 
 
@@ -384,7 +384,7 @@ Fast-forward
  branching/rebase.sh | 3 +--
  1 file changed, 1 insertion(+), 2 deletions(-)
 ```
-[1](https://github.com/Nikich828/git03_devops/blob/main/35.jpeg)
+![1](https://github.com/Nikich828/git03_devops/blob/main/35.jpeg)
 
 *В качестве результата работы по всем заданиям приложите ссылку на .md-файл в вашем репозитории.*
  
